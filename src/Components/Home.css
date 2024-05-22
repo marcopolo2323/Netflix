@@ -1,0 +1,32 @@
+.background_container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Altura completa de la pantalla */
+    background-image: url('../img/deadpool.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajustar imagen al contenedor */
+    background-position: center; /* Centrar la imagen */
+  }
+  
+.contenedor_title{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-family: 'Bebas Neue', sans-serif; /* Establece la fuente */
+  }
+  .title {
+    transform: translate(-50%, -50%); /* Centrar el título */
+    color: white; /* Color del título */
+    font-size: 3rem; /* Tamaño del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+    font-family: 'Bebas Neue', sans-serif; /* Establece la fuente */
+  }
+  
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+} 
+.fondo_img{
+    height: 100%;
+    width: 100%;
+}
