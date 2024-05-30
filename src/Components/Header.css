@@ -8,41 +8,49 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6em;
     display: inline;
-    padding: 5px 0 0 30px;
+    padding: 0;
 } 
 
-.nav_container{
-    height: 3em;
+.navbar{
+    position: fixed; /* Fijado en la parte superior */
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 1rem;
     display: flex;
-    text-align: end;
-    justify-content: stretch;
-    background-color: rgb(0,0,0,0.5);
-    border-bottom: 2px solid #000;
+    justify-content: space-around;
+    z-index: 1; /* Asegura que el navbar esté encima del contenido */
+    transition: top 0.3s ease; /* Transición suave para mostrar/ocultar */
 }
-.nav_container ul{
-    margin: 0;
-    padding: 5px 0 0 50px;
+.navbar.hidden {
+    top: -100px; /* Oculta el navbar moviéndolo hacia arriba */
+  }
+  
+.navbar.visible {
+    top: 0; /* Muestra el navbar */
+  }
+
+.navbar ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-}
-.nav_container ul li{
-    margin-right: 50px;
-    font-size: 1.2em;
-}
+    gap: 1rem;
+  }
+.navbar li {
+    display: inline;
+  }
 
-.nav_container ul li a{
+.navbar a {
+    color: rgb(255,255,255,0.8);
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-.nav_container ul li a:hover{
+    font-size: 1.2rem;
+  }
+.navbar ul li a:hover{
     color: #fff;
 }
 
-.nav_container ul .busqueda{
+.navbar ul .busqueda{
     display: flex;
     justify-content: left;
 }

@@ -1,0 +1,47 @@
+/* src/VideoRow.css */
+body{
+  background-color: black;
+}
+.titulo{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.video-row-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .scroll-button.left {
+    left: 0;
+  }
+  
+  .scroll-button.right {
+    right: 0;
+  }
+  
+  .scroll-button:focus {
+    outline: none;
+  }
+
+  

@@ -2,11 +2,34 @@
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from 'react';
 
 function Header() {
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > lastScrollY) {
+          // Scrolling down
+          setShow(false);
+        } else {
+          // Scrolling up
+          setShow(true);
+        }
+        setLastScrollY(window.scrollY);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [lastScrollY]);
+  
   return(
       <div>
-        <nav className='nav_container'>
+        <nav className={`navbar ${show ? 'visible' : 'hidden'}`}>
           <h2 className='logo'>PERUFLIX</h2>
           <ul>
             <li className='lista_inicio'><a href="#">Inicio</a></li>
