@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/netTV/static/css/main.7300a4a7.css",
+    "main.js": "/netTV/static/js/main.57bb9b93.js",
+    "static/js/453.302b6797.chunk.js": "/netTV/static/js/453.302b6797.chunk.js",
+    "static/media/deadpool.jpg": "/netTV/static/media/deadpool.bfb77ba8a2a0f33f6d30.jpg",
+    "index.html": "/netTV/index.html",
+    "main.7300a4a7.css.map": "/netTV/static/css/main.7300a4a7.css.map",
+    "main.57bb9b93.js.map": "/netTV/static/js/main.57bb9b93.js.map",
+    "453.302b6797.chunk.js.map": "/netTV/static/js/453.302b6797.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7300a4a7.css",
+    "static/js/main.57bb9b93.js"
+  ]
+}
