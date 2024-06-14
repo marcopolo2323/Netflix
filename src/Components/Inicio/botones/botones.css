@@ -1,0 +1,37 @@
+.navbar{
+    background-color: #0001;
+    display: flex;
+    padding: 1em;
+}
+.logo{
+    color: #f00;
+    margin-left: 3em;
+    font-size: 3em;
+}
+.botones{
+    display: flex;
+    margin-left: auto; /* Esto empuja el ul al final */
+    list-style: none; /* Si quieres eliminar los puntos de la lista */
+    padding:0;
+    align-items: center;
+}
+
+  .boton-idioma {
+    width: 10em;
+    background-color: #4447;
+    color: white;
+    border: 1px solid #fff5;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    
+  }
+
+  .boton-cerrar-sesion {
+    background-color: red;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 13em;
+  }

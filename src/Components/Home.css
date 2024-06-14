@@ -16,12 +16,12 @@
   width: 100%;
   height: 100%; /* Asegúrate de que el contenedor de fondo ocupe toda la altura */
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0 )), 
-  url('./../img/deadpool.jpg') no-repeat center center/cover;
+  url('./img/deadpool.jpg') no-repeat center center/cover;
 }
 
 .contenedor_title {
   position: absolute; /* Asegúrate de que el título esté posicionado correctamente */
-  top: 30%;
+  top: 40%;
   left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -32,7 +32,7 @@
   margin: 0;
 }
 
-p {
+.contenedor_title p {
   margin-top: 1rem;
   font-size: 1rem;
   max-width: 400px;

@@ -1,25 +1,32 @@
-// App.js
 import React from 'react';
-import Header from './Components/Header';
-import Footer from './Components/footer';
-import './App.css';
-import Home from './Components/home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import VideoRow from './Components/Cards/videoRow';
+import Center from './Components/Centro';
+import Presentacion from './Components/Inicio/Presentacion';
+import Login from './Components/login/login';
+
 
 function App() {
-
   return (
-    <div className="app">
-      <Header/>
-      <Home/>
-      <h2 className='titulo'>Popular en Netflix</h2>
-      <VideoRow className="card" jsonFilePath="https://rickandmortyapi.com/api/character" />
-      <h2 className='titulo'>My list</h2>
-      <VideoRow className="card" jsonFilePath="https://rickandmortyapi.com/api/character" />
-      <Footer/>
-    </div>
+    <Router>
+      <div className="contenedor_app">
+        <Routes>
+          <Route path="/" element={<Presentacion />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/main" element={<Center />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+
+
+
+//git fetch ===> Para actualizar los branch
+//git add .
+//git commit -m "Cambios de la rama 30/5/24"
+//git push origin Rama1
+//**************** */
+//en github se pone en newpull request y lo comparamos

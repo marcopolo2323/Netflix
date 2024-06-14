@@ -1,0 +1,66 @@
+.video-carousel-section {
+  margin-bottom: 40px; /* Espacio entre cada sección del carrusel */
+}
+
+.carousel-title {
+  color: black; /* Ajusta el color según tus necesidades */
+  text-align: left;
+  margin: 20px 0;
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.video-carousel-container {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto_video {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+}
+
+.video-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.video-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.video-thumbnail img {
+  width: 150px;
+  height: auto;
+}
+
+.video-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.video-thumbnails {
+  display: flex;
+}
+
+.video-thumbnail {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
